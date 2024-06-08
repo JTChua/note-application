@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="An application taking note">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <title>Note Application</title>
+</head>
+<body>
+    <form action="" id="form" class="form">
+
+        <label for="textarea">
+            <h1>Note Application</h1>
+            <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="Take a note..."></textarea>
+        </label>
+
+        <label for="note">Note Title
+            <input type="text" id="note" placeholder="Title" name="note">
+        </label>
+
+        <label for="body">
+            <input type="text" id="body" placeholder="Note body" name="body">
+        </label>
+        
+        <label for="color">
+            <select name="color" id="">Colors
+                <option>Select Colors</option>
+                <option value="#CE2029">Red</option>
+                <option value="#228B22">Green</option>
+                <option value="#CE2029">Blue</option>
+                <option value="#FFD300">Yellow</option>
+                <option value="#BF00FF">Purple</option>
+                <option value="#ED9121">Orange</option>
+                <option value="#DA1884">Pink</option>
+                <option value="#964B00">Brown</option>
+                <option value="#000000">Black</option>
+                <option value="#8C92AC">Grey</option>
+                <option value="#FFFAF0">White</option>
+            </select>
+        </label>
+
+        <label for="button" class="button">
+            <button name="button" id="button" class="add">Add Notes</button>
+        </label>
+
+        <section class="notes">
+            <section class="text">
+                <h2>Your Notes</h2>
+                <h1>Take a linkedin course</h1>
+                <h3>Some text</h3>
+                <h4>Some text</h4>
+            </section>
+            
+            <label for="edit">Edit Note
+                <button name="edit" id="edit">Edit</button>
+            </label>
+
+            <label for="delete">Delete Note
+                <button name="delete" id="delete">Delete</button>
+            </label>
+        </section>
+        
+
+    </form>
+    
+</body>
+</html>
