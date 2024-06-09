@@ -1,0 +1,60 @@
+#notes {
+    border: 1px solid blue;
+    padding: 20px;
+    max-width: 80%;
+    margin: auto;
+}
+
+.note {
+    margin-top: 20px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.input {
+    margin-bottom: 20px;
+}
+
+.text {
+    background: #FFA07A;
+    padding: 20px;
+    border-radius: 10px;
+    width: calc(75% - 250px);
+}
+
+input {
+    height: 32px;
+    border: 1px solid #ccc;
+    padding: 0 10px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    width: calc(50% - 150);
+}
+
+button, select {
+    height: 32px;
+    margin-left: 8px;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 4px 16px;
+    color: whitesmoke;
+}
+
+.add {
+    background: #008000;
+}
+
+.delete {
+    background: #FF0000;
+}
+
+.edit {
+    background: #FFBF00;
+}
+
+#color {
+    background: #808000;
+}

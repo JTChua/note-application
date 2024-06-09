@@ -6,65 +6,44 @@
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <meta name="description" content="An application taking note">
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <title>Note Application</title>
 </head>
 <body>
-    <form action="" id="form" class="form">
+    <div id="notes">
+        <h1>Simple Note App</h1>
 
-        <label for="textarea">
-            <h1>Note Application</h1>
-            <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="Take a note..."></textarea>
-        </label>
-
-        <label for="note">Note Title
-            <input type="text" id="note" placeholder="Title" name="note">
-        </label>
-
-        <label for="body">
-            <input type="text" id="body" placeholder="Note body" name="body">
-        </label>
-        
-        <label for="color">
-            <select name="color" id="">Colors
-                <option>Select Colors</option>
-                <option value="#CE2029">Red</option>
-                <option value="#228B22">Green</option>
-                <option value="#CE2029">Blue</option>
-                <option value="#FFD300">Yellow</option>
-                <option value="#BF00FF">Purple</option>
-                <option value="#ED9121">Orange</option>
-                <option value="#DA1884">Pink</option>
-                <option value="#964B00">Brown</option>
-                <option value="#000000">Black</option>
-                <option value="#8C92AC">Grey</option>
-                <option value="#FFFAF0">White</option>
+        <div class="input">
+            <input type="text" id="title" placeholder="Note Title">
+            <input type="text" id="body" placeholder="Note body">
+            <select name="color" id="color">
+                <option>Select Color</option>
+                <option value="#CCCCFF">Purple</option>
+                <option value="#DE3163">Pink</option>
+                <option value="#40E0D0">Cyan</option>
+                <option value="#6495ED">Blue</option>
+                <option value="#9FE2BF">Green</option>
             </select>
-        </label>
+            <button type="button" class="add">Add Notes</button>
+        </div>
 
-        <label for="button" class="button">
-            <button name="button" id="button" class="add">Add Notes</button>
-        </label>
+        
+        <div class="notesDiv">
 
-        <section class="notes">
-            <section class="text">
-                <h2>Your Notes</h2>
-                <h1>Take a linkedin course</h1>
-                <h3>Some text</h3>
-                <h4>Some text</h4>
-            </section>
-            
-            <label for="edit">Edit Note
-                <button name="edit" id="edit">Edit</button>
-            </label>
-
-            <label for="delete">Delete Note
-                <button name="delete" id="delete">Delete</button>
-            </label>
-        </section>
+            <!-- Static Notes -->
+            <!--
+            <div class="note">
+                <div class="text">
+                    <h2>Learning frontend web development</h2>
+                    <p>Taking LinkedIn Learning course</p>
+                </div>
+                <Button class="edit">Edit Notes</Button>
+                <button class="delete">Delete Notes</button>
+            </div>
+            -->
+        </div>
         
 
-    </form>
-    
+    </div>
 </body>
 </html>
